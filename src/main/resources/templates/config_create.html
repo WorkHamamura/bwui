@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="ja" th:insert="template :: head">
+</head>
+<body>
+
+<!-- Include Header -->
+<div th:insert="template :: header"></div>
+
+<!-- Main Content -->
+<div>
+  <main>
+    <div class="row">
+    </div>
+    <div class="row">
+      <div class="col push-s3 s6 card-panel center">
+        <h4 class="col push-s2 s8 #80cbc4 teal-text lighten-3">
+          Create New Config Files
+        </h4>
+        <div class="row">
+         <div class="input-field col push-s3 s6">
+            <input id="file_name" type="text" class="validate">
+            <label for="file_name">New File Name</label>
+         </div>
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+          </div>
+          <div class="col push-s3 s4">
+            <br><a class="waves-effect waves-light btn #eeeeee grey lighten-3" href="/server">Back</a>
+          </div>
+          <div class="col push-s1 s4">
+            <br><a class="waves-effect waves-light btn #a5d6a7 green lighten-3" href="#">Create</a>
+          </div>
+        </div>
+    </div>
+  </main>
+</div>
+
+<!-- Include Footer -->
+<div th:insert="template :: footer"></div>
+
+</body>
+</html>

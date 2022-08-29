@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="ja" th:fragment="head">
+  <meta charset="UTF-8">
+  <title>Bind Web User Interface</title>
+  <!--Import Google Font-->
+  <link th:href="@{/font/robot.font}" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link th:href="@{/css/materialize.min.css}" rel="stylesheet">
+  <link th:href="@{/css/template.css}" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script th:src="@{/js/materialize.min.js}"></script>
+  <script th:src="@{/js/template.js}"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header th:fragment="header">
+    <nav class="#80cbc4 teal lighten-3">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo center">Bwui</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/server">Server Config</a></li>
+          <li><a href="/zone">Zone Files</a></li>
+          <li><a class="waves-effect waves-light btn #a5d6a7 green lighten-3" href="#">Bind Restart</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+  </header>
+
+  <!-- No Main Content -->
+
+  <!-- Footer -->
+  <footer class="page-footer center-align #80cbc4 teal lighten-3" th:fragment="footer">
+    &copy; DevelopNaoki 2022
+  </footer>
+
+</body>

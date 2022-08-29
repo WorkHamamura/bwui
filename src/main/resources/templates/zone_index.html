@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="ja" th:insert="template :: head">
+</head>
+<body>
+
+<!-- Include Header -->
+<div th:insert="template :: header"></div>
+
+<!-- Main Content -->
+<div>
+  <main>
+    <div class="row">
+    </div>
+    <div class="row">
+      <div class="col push-s3 s6 card-panel center">
+        <h4 class="col push-s2 s8 #80cbc4 teal-text lighten-3">
+          Zone File List
+        </h4>
+        <div class="col push-s1 s4">
+          <br><a class="waves-effect waves-light btn #a5d6a7 green lighten-3" href="#">New Zone</a>
+        </div>
+        <table class="striped responsive-table">
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>example.jp.db</td>
+              <td>2022-08-29-17:07</td>
+            </tr>
+            <tr>
+              <td>0.168.192.in-addr.arpa.db</td>
+              <td>2022-08-29-17:07</td>
+            </tr>
+            <tr>
+              <td>cloud.example.jp.db</td>
+              <td>2022-08-29-17:07</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Include Footer -->
+<div th:insert="template :: footer"></div>
+
+</body>
+</html>
