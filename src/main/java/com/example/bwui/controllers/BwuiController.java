@@ -21,6 +21,11 @@ public class BwuiController {
 		return "config_create";
 	}
 
+	@GetMapping("/server/update")
+	public String config_update(Model model) {
+		return "config_update";
+	}
+
 	@GetMapping("/zone")
 	public String zone_index(Model model) {
 		return "zone_index";
