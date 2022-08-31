@@ -1,26 +1,28 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head lang="ja" th:insert="template :: head">
+<head lang="ja" th:insert="_template :: head">
 </head>
 <body>
 
 <!-- Include Header -->
-<div th:insert="template :: header"></div>
+<div th:insert="_template :: header"></div>
 
 <!-- Main Content -->
 <div>
   <main>
-    <div class="row center">
-      <h2>404 ERROR</h2>
-      <h3>
-        The page you are looking for could not be found.
-      </h3>
+    <div class="row">
+      <div class="col push-s3 s6 center card-panel #80cbc4 teal-text lighten-3">
+        <h4>404 ERROR</h4>
+        <p>
+          The page you are looking for could not be found.
+        </p>
+      </div>
     </div>
   </main>
 </div>
 
 <!-- Include Footer -->
-<div th:insert="template :: footer"></div>
+<div th:insert="_template :: footer"></div>
 
 </body>
 </html>
