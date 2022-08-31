@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head lang="ja" th:insert="template :: head">
+<head lang="ja" th:insert="_template :: head">
 </head>
 <body>
 
 <!-- Include Header -->
-<div th:insert="template :: header"></div>
+<div th:insert="_template :: header"></div>
 
 <!-- Main Content -->
 <div>
@@ -40,7 +40,7 @@
 </div>
 
 <!-- Include Footer -->
-<div th:insert="template :: footer"></div>
+<div th:insert="_template :: footer"></div>
 
 </body>
 </html>
